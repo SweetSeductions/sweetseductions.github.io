@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/*
+  Radius by TEMPLATED
+  templated.co @templatedco
+  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+
+  Adapted in order to work with main.css
+*/
+
+/* Image */
+
+.image {
+    border-radius: 4px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image img {
+    border-radius: 4px;
+    display: block;
+}
+
+.image.left, .image.right {
+    max-width: 40%;
+}
+
+.image.left img, .image.right img {
+    width: 100%;
+}
+
+.image.left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+}
+
+.image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    top: 0.25em;
+}
+
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+.image.fit img {
+    width: 100%;
+}
+
+.image.main {
+    display: block;
+    margin: 0 0 3em 0;
+    width: 100%;
+}
+
+.image.main img {
+    width: 100%;
+}
+
+/* List */
+
+/* Columns */
+
+.columns {
+    position: relative;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+}
+
+.columns .image {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 .5em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.columns .image img {
+    -moz-transition: -moz-transform 0.2s ease-in-out;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    -ms-transition: -ms-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3D(0, 0, 0);
+}
+
+.columns .image:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 736px) {
+
+    .columns {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .columns {
+	-moz-column-count: 1;
+	-webkit-column-count: 1;
+	column-count: 1;
+    }
+
+}
+
+/* Preview */
+
+#preview {
+    position: relative;
+    padding: 1em;
+}
+
+#preview .inner {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+#preview .image {
+    margin: 0;
+}
+
+#preview.vertical .inner {
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+#preview.vertical .inner .image {
+    -ms-flex: 1 1 calc(100% - 50px);
+    flex: 1 1 calc(100% - 50px);
+    max-width: 100%;
+    width: 50%;
+}
+
+#preview.vertical .inner .content {
+    -ms-flex: 1 1 calc(100% - 50px);
+    flex: 1 1 calc(100% - 50px);
+    max-width: 100%;
+    width: 50%;
+}
+
+#preview .nav {
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    position: fixed;
+    height: 2em;
+    width: 2em;
+    background: #fff;
+    border-radius: 100%;
+    line-height: 2em;
+    top: 50%;
+    font-size: 1.75em;
+    text-align: center;
+    z-index: 10003;
+}
+
+#preview .nav:hover {
+    background: #FFF;
+}
+
+#preview .nav.previous {
+    left: -.4em;
+}
+
+#preview .nav.next {
+    right: -.4em;
+}
+
+#preview .content {
+    padding: 3em 2em;
+}
+
+#preview .content header h2 {
+    font-size: 2.5em;
+    color: #e74c3c;
+}
+
+@media screen and (max-width: 1680px) {
+
+    #preview .inner {
+	max-width: 55em;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    #preview.vertical .inner {
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    #preview .content {
+	padding: 2em;
+    }
+
+    #preview .content header h2 {
+	font-size: 2em;
+    }
+
+}
+
+/* Main */
+
+#main {
+    padding: 2em;
+}
+
+#main .inner {
+    max-width: 100%;
+}
+
+#main .imagesinner {
+    display: block;
+    margin: 0 auto;
+    min-width: 100%;
+    padding-top: 3em;
+}

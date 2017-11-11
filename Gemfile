@@ -4,7 +4,7 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem 'json'
-gem "jekyll", "3.4.3"
+gem "jekyll", "3.6.2"
 gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
